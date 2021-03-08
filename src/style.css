@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+#mapa-colombia{
+    max-height: 700px;
+    min-width: 350px;
+}
+
+.background {
+  fill: transparent;
+  pointer-events: all;
+}
+
+.map-layer {
+  fill: #fff;
+  stroke: #aaa;
+}
+
+.effect-layer {
+  pointer-events: none;
+}
+
+text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+text.big-text {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.effect-layer text,
+text.dummy-text {
+  font-size: 12px;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 175px;
+  height: fit-content;
+  padding: 5px;
+  font: 12px sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10%;
+  color: white;
+  border: 0px;
+  pointer-events: none;
+  user-select: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.item-tooltip {
+  margin-bottom: 5px;
+}
+
+.contenedor-indicadores{
+  width: 50vw;
+  position: absolute;
+  bottom: 0;
+  user-select: none;
+}
+
+@media (max-width: 600px){
+  .contenedor-indicadores{
+    font-size: 13px;
+  } 
+}
+
+.contenedor-indicador{
+  display: flex;
+  align-items: center;
+}
+
+.cuadro-color{
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+#top-1{
+  background-color: red;
+}
+
+#top-2{
+  background-color: #E3800C;
+}
+
+#top-3{
+  background-color: #F5D590;
+}
+
+.contenedor-mapa{
+  position: relative;
+}
